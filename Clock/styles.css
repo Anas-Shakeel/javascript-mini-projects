@@ -1,0 +1,71 @@
+/* APP Settings {Tweak to get the desired result} */
+:root {
+    --app-bg-color: #212121;
+    --clock-bg-clock: #252525;
+    --clock-border-clock: #515151;
+    --clock-font-family: "Courier New", monospace;
+    --clock-font-color: gainsboro;
+    --clock-font-size: 500%;
+    --clock-border-radius: 1.5rem;
+}
+
+body {
+    background-color: var(--app-bg-color);
+    padding: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 94vh;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50rem;
+    height: 25rem;
+    border-radius: var(--clock-border-radius);
+    background-color: var(--clock-bg-clock);
+    border: 1px solid var(--clock-border-clock);
+    overflow: hidden;
+}
+
+.clock-text {
+    user-select: none;
+    margin: 0;
+}
+
+.time {
+    font-family: var(--clock-font-family);
+    font-size: var(--clock-font-size);
+    color: var(--clock-font-color);
+}
+
+.time-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+
+.date {
+    font-family: var(--clock-font-family);
+    font-size: 200%;
+    color: var(--clock-font-color);
+    opacity: 40%;
+}
+
+.date-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--clock-border-clock);
+    width: 100%;
+    height: 25%;
+}
