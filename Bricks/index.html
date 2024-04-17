@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bricks App</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="bricks.js"></script>
+    </head>
+    <body>
+        <!-- App name -->
+        <h1 id="app-name">Bricks App</h1>
+
+        <!-- Main App starts from here -->
+        <div id="main">
+            <!-- * Settings Panel -->
+            <div id="settings">
+                <!-- Inputs Field -->
+                <input id="rows" class="rows-columns" type="number" placeholder="Rows" autofocus />
+                <input id="columns" class="rows-columns" type="number" placeholder="Columns" />
+
+                <!-- Radio buttons for alignment -->
+                <select name="alignment" id="align-dd">
+                    <option name="align-dd-option" class="align-dd-option" value="left">Left aligned</option>
+                    <option name="align-dd-option" class="align-dd-option" value="center">Center aligned</option>
+                    <option name="align-dd-option" class="align-dd-option" value="right">Right aligned</option>
+                </select>
+
+                <!-- Generate Button -->
+                <button id="generate-button" class="button">Generate</button>
+
+                <!-- Bricks Size Scale -->
+                <div class="scale-div">
+                    <label for="size-slider" id="size-scale-label">Size </label>
+                    <input type="range" name="slider" id="size-slider" class="slider" min="20" max="200" value="90" />
+                </div>
+
+                <!-- Bricks shape Scale -->
+                <div class="scale-div">
+                    <label for="shape-slider" id="shape-scale-label">Shape</label>
+                    <input type="range" name="slider" id="shape-slider" class="slider" min="0" max="50" value="0" />
+                </div>
+
+                <!-- Hide All Button -->
+                <button id="hide-all-button" class="button">Hide All</button>
+
+                <!-- Show All Button -->
+                <button id="show-all-button" class="button">Show All</button>
+
+                <!-- Invert Button -->
+                <button id="invert-button" class="button">Invert</button>
+
+                <!-- Panel Ends Here -->
+            </div>
+
+            <!-- * Playground -->
+            <div id="playground">
+                <!-- Bricks will be placed here -->
+            </div>
+        </div>
+    </body>
+</html>
