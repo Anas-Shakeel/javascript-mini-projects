@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pyramid</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="mario.js"></script>
+    </head>
+    <body>
+        <!-- Program Name -->
+        <h1>Pyramid</h1>
+
+        <!-- Inputs Field -->
+        <div id="inputs-field">
+            <input id="number" type="number" placeholder="Enter no. of rows (1 to 30)" autofocus/>
+            <button id="generate-button">Generate</button>
+        </div>
+
+        <div id="align-field">
+            <input type="radio" name="align" class="align" value="left"> left
+            <input type="radio" name="align" class="align" value="center" checked> Center
+            <input type="radio" name="align" class="align" value="right"> Right
+        </div>
+
+        <!-- All the bricks will be placed here.... -->
+        <div id="area"></div>
+    </body>
+</html>
