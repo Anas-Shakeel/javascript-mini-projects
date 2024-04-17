@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garbage App</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="posts.js"></script>
+    </head>
+    <body>
+        <!-- Shows posts which are div with a title and button
+        When button is clicked, hide the div/post -->
+
+        <!-- Header div -->
+        <div id="header">
+            <!-- App name -->
+            <h1>Garbage App</h1>
+            <div id="input-field">
+                <!-- Add Post Button -->
+                <button id="add-post" class="header-button">Add Post</button>
+                <!-- Delete All Posts Button -->
+                <button id="delete-posts" class="header-button">
+                    Delete All Post
+                </button>
+                <!-- Reset Posts Button -->
+                <button id="reset" class="header-button">Reset posts</button>
+                <!-- TODO: Add Default post number -->
+            </div>
+        </div>
+
+        <!-- Contains posts -->
+        <div id="posts">
+            <!-- Template Post -->
+            <div class="post">
+                <h2 class="post-heading">Post Title</h2>
+                <button class="post-button">Delete</button>
+            </div>
+        </div>
+    </body>
+</html>
