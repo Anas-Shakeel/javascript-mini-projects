@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess a number</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="guess-info-section">
+                <!-- Previous Guesses -->
+                <div class="guess-container previous-guesses">
+                    <p class="guess-heading">Previous Guesses:</p>
+                    <div id="pre-guesses-container">
+                        <span class="guess-box error">10</span>
+                        <span class="guess-box error">1</span>
+                        <span class="guess-box error">57</span>
+                        <span class="guess-box error">66</span>
+                        <span class="guess-box error">99</span>
+                    </div>
+                </div>
+
+                <!-- Remaining Guesses -->
+                <div class="guess-container remaining-guesses">
+                    <p class="guess-heading">Remaining Guesses:</p>
+                    <div id="rem-guesses-container">
+                        <span class="guess-box success" id="rem-guesses">5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="heading">Guess a number in 5 Guesses</h2>
+
+            <!-- Input Fields -->
+            <input class="number-input" id="guess-input" type="number" placeholder="Between 1 and 100" autofocus />
+            <button class="btn" id="submit">Submit Guess</button>
+
+            <!-- Message box to display messages-->
+            <div class="message-box danger hide" id="message"></div>
+
+            <!-- Main Ends here -->
+        </div>
+
+        <!-- Javascript Script Link-->
+        <script src="app.js"></script>
+    </body>
+</html>

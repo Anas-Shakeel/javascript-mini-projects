@@ -1,0 +1,137 @@
+:root {
+    --app-bg: #212121;
+    --default-text-color: #a5a5a5;
+    --border-color: #353535;
+}
+
+* {
+    color: var(--default-text-color);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: var(--app-bg);
+}
+
+.main {
+    width: 100%;
+    height: 96vh;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guess-info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 10%;
+    margin-top: 0.5rem;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 2px;
+}
+
+.guess-container {
+    /* background-color: #111; */
+    background-color: #292929;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.previous-guesses {
+    width: 74%;
+}
+
+.remaining-guesses {
+    width: 24%;
+}
+
+.previous-guesses-section {
+    display: flex;
+}
+.guess-heading {
+    font-size: 1.1rem;
+    margin: 0 0.8rem;
+}
+
+.guess-box {
+    margin: 0.2rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.number-input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+    background-color: #282828;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.number-input:hover {
+    background-color: #353535;
+}
+.number-input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.btn {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #282828;
+    border: 1px solid var(--border-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #353535;
+}
+.btn:active {
+    background-color: #313131;
+}
+
+.message-box {
+    width: 30%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: #282828;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* Helper Classes */
+.normal {
+    background-color: #282828;
+}
+.success {
+    background-color: rgba(24, 151, 24, 0.25);
+}
+.error {
+    background-color: rgba(151, 24, 24, 0.25);
+}
+.danger {
+    background-color: rgba(141, 100, 25, 0.25);
+}
+.hide {
+    display: none;
+}
+
+
