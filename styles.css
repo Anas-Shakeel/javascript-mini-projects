@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #212121;
+    --proj-container-color: #333;
+    --proj-box-color: #404040;
+    --border-color: #606060;
+    --default-font: "Inter";
+    --text-color: #aaa;
+}
+
+* {
+    font-family: var(--default-font);
+    color: var(--text-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 75vh;
+    background-color: var(--proj-container-color);
+    border: 1px solid rgba(70, 70, 70, 100);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.proj-box {
+    width: 270px;
+    height: 270px;
+    background-color: var(--proj-box-color);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    margin: 0.4rem;
+}
