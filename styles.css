@@ -3,7 +3,8 @@
     --proj-container-color: #333;
     --proj-box-color: #404040;
     --border-color: #606060;
-    --default-font: "Inter";
+    /* --default-font: "Inter"; */
+    --default-font: "verdana";
     --text-color: #aaa;
     --hover-highlight: #888;
 }
@@ -64,4 +65,44 @@ body {
     border: 1px solid var(--border-color);
     box-sizing: border-box;
     margin: 0.4rem;
+    overflow: hidden;
+}
+
+.proj-box:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #555;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.image-container {
+    background-color: #888;
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 75%;
+}
+
+.text-content {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-title {
+    font-family: Inter;
+    font-size: 1.3rem;
+    margin-bottom: .25rem;
+}
+
+.box-desc {
+    font-size: 0.96rem;
+    font-family: verdana;
+    text-align: center;
 }
