@@ -5,6 +5,7 @@
     --border-color: #606060;
     --default-font: "Inter";
     --text-color: #aaa;
+    --hover-highlight: #888;
 }
 
 * {
@@ -35,6 +36,24 @@ body {
     box-sizing: border-box;
     padding: 1rem;
     overflow: auto;
+}
+
+/* Custom Scrollbar Styling */
+.main::-webkit-scrollbar {
+    width: 1rem;
+}
+.main::-webkit-scrollbar-track {
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: var(--proj-box-color);
+}
+.main::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: var(--border-color);
+}
+.main::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-highlight);
 }
 
 .proj-box {
