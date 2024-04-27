@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Colors App</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Heading -->
+        <h1 class="heading">Color Generator</h1>
+
+        <!-- Fields -->
+        <fieldset class="input-fields">
+            <legend>Options</legend>
+            <!-- Color space -->
+            <div class="color-space field">
+                <label for="colorspace">Color Space: </label>
+                <input
+                    type="number"
+                    value="255"
+                    name="colorspace"
+                    id="colorspace"
+                    placeholder="Value between 1-255"
+                    autofocus />
+            </div>
+
+            <!-- Color Offset -->
+            <div class="color-offset field">
+                <label for="coloroffset">Color Offset: </label>
+                <input type="number" value="64" name="coloroffset" id="coloroffset" placeholder="Value between 0-100" />
+            </div>
+
+            <!-- Generate button -->
+            <button class="generate-btn" id="generate">Generate</button>
+        </fieldset>
+
+        <!-- All colors go here... -->
+        <div class="main"></div>
+    </body>
+
+    <script src="app.js"></script>
+</html>

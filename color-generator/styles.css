@@ -1,0 +1,125 @@
+:root {
+    --border-color: rgb(34, 103, 233);
+}
+
+* {
+    font-family: Verdana;
+}
+
+body {
+    height: 84vh;
+    background-color: #ccc;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+}
+
+.heading {
+    margin: 0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-weight: 800;
+    user-select: none;
+    color: #222;
+}
+
+.input-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+legend {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.input-fields input {
+    outline: none;
+    padding: 0.25rem;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #222;
+}
+.input-fields input:focus {
+    border-color: var(--border-color);
+}
+.input-fields input:hover {
+    border-color: var(--border-color);
+}
+
+.field {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.15rem;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.generate-btn {
+    width: 8rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 1rem;
+    background-color: rgb(225 225 225);
+    border: 1px solid #555;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+.generate-btn:hover {
+    background-color: rgb(240 240 240);
+    border-color: var(--border-color);
+}
+
+.generate-btn:active {
+    background-color: rgb(230, 230, 230);
+}
+.generate-btn:focus {
+    border-color: var(--border-color);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background-color: #ddd;
+    overflow: auto;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.box {
+    width: 7rem;
+    height: 7rem;
+    box-sizing: border-box;
+    margin: 0.2rem;
+    border: 1px solid silver;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-color: #555;
+    opacity: 85%;
+}
+
+.box:active {
+    opacity: 50%;
+}
