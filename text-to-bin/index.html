@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text to Binary</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="heading">
+                <h1>Text (10)<sub>2</sub> Binary</h1>
+            </div>
+            <div class="container">
+                <!-- textarea for user text -->
+                <textarea class="textarea" id="input_text" cols="30" rows="10" autofocus>This is me !</textarea>
+
+                <!-- Textarea for converted text -->
+                <textarea class="textarea output" id="output_text" cols="30" rows="10" disabled></textarea>
+
+                <!-- Input fields -->
+                <button class="btn-convert" id="convert">Convert</button>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
+
+<!-- 
+Settings | Options:
+
+
+Dropdown to select a method:
+    to >> Ascii, Binary, Hex, Octal, Decimal etc...
+
+Strip Whitespaces?
+    Checkbox to strip whitespaces or not
+        : upon click :
+            convert the whole text again but this time also include
+
+ -->

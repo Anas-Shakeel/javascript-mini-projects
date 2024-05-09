@@ -1,0 +1,95 @@
+* {
+    font-family: "Inter";
+    color: silver;
+    margin: 0;
+}
+
+body {
+    background-color: #212121;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 0.95rem;
+    padding: 0.5rem 0rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.textarea {
+    width: 90%;
+    height: 40%;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #323232;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+.textarea::selection {
+    background-color: transparent;
+    background-color: #aaa;
+    color: black;
+}
+
+.output {
+    background-color: #323232;
+    width: 90%;
+    height: 40%;
+    font-size: 1.25rem;
+    overflow: auto;
+    padding: 0.6rem;
+    font-family: "Verdana";
+    cursor: text;
+}
+
+.output::-webkit-scrollbar {
+    width: 1rem;
+}
+.output::-webkit-scrollbar-track {
+    background-color: #454545;
+}
+.output::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 1rem;
+}
+.output::-webkit-scrollbar-thumb:hover {
+    background-color: #707070;
+}
+
+.btn-convert {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #323232;
+    border: 1px solid #555;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.btn-convert:hover {
+    background-color: #444;
+}
+.btn-convert:active {
+    background-color: #3f3f3f;
+}
